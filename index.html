@@ -12,23 +12,19 @@
             <img src="basmala2.jpg" alt="Basmala" class="basmala">
         </a>
     </header>
-    <button class="toggle-btn" onclick="toggleNav()">☰</button>
-    <nav class="sidebar">
-        <button class="close-btn" onclick="toggleNav()">✖</button>
-        <div class="sidebar-content">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><a href="articles">Articles</a></li>
-                <li><a href="books">Books</a></li>
-            </ul>
-        </div>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="articles">Articles</a></li>
+            <li><a href="books">Books</a></li>
+        </ul>
     </nav>
     <main>
         <div class="main-content">
             <div class="text-content">
                 <h2>About Me</h2>
-                <p>Welcome! I'm Aryan Chandavarkar, an Engineering Student. You can find most of my stuff in the navigation bar to your left.</p>
+                <p>Welcome! I'm Aryan Chandavarkar, an Engineering Student. You can find most of my stuff in the navigation bar above.</p>
                 <h3>Recent Articles:</h3>
                 <ul>
                     <li><a href="articles">View All Articles</a></li>
@@ -46,19 +42,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function toggleNav() {
-            document.querySelector('.sidebar').classList.toggle('open');
-        }
-
-        document.addEventListener('click', function(event) {
-            const sidebar = document.querySelector('.sidebar');
-            const toggleBtn = document.querySelector('.toggle-btn');
-            if (!sidebar.contains(event.target) && !toggleBtn.contains(event.target) && sidebar.classList.contains('open')) {
-                sidebar.classList.remove('open');
-            }
-        });
-    </script>
 </body>
 </html>
 
