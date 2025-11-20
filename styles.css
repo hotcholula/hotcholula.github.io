@@ -328,35 +328,56 @@ main {
 .work-list {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 0;
 }
 
 .work-item {
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 28px;
-    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.work-item:last-child {
+    border-bottom: none;
 }
 
 .work-item:hover {
-    border-color: #c7d2fe;
-    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.08);
+    background-color: #f8fafc;
+    margin: 0 -16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 8px;
 }
 
-.work-header {
+.work-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    flex-shrink: 0;
+    /* Logo image can be added here with: background-image: url('logo.png'); background-size: contain; background-position: center; background-repeat: no-repeat; */
+}
+
+.work-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-title-row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 8px;
+    align-items: center;
     gap: 16px;
 }
 
-.work-item h3 {
-    font-size: 1.25em;
-    margin: 0;
+.work-company-title {
+    font-size: 0.9375em;
     color: #0f172a;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.01em;
     flex: 1;
 }
@@ -366,20 +387,6 @@ main {
     color: #94a3b8;
     font-weight: 500;
     white-space: nowrap;
-}
-
-.work-company {
-    font-size: 0.9375em;
-    color: #6366f1;
-    font-weight: 600;
-    margin: 0 0 12px 0;
-}
-
-.work-description {
-    font-size: 0.9375em;
-    color: #475569;
-    line-height: 1.6;
-    margin: 0;
 }
 
 /* Footer Styles */
