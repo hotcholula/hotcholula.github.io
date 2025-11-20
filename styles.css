@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('christiandavidg.jpg'); /* Replace with your background image URL */
+    background-repeat: no-repeat; /* Ensure the background image doesn't repeat */
+    background-size: cover; /* Make sure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    width: 100%; /* Ensure header spans the full width */
+    position: relative; /* Ensure positioning for basmala image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header .basmala {
+    max-height: 80px; /* Adjusted to reduce header height */
+    width: auto;
+}
+
+/* Navigation Styles */
+.toggle-btn {
+    background: white; /* Background color for visibility */
+    border: 2px solid black; /* Border black */
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001; /* Ensure the button is above other content */
+    width: 45px; /* Define width to match the example */
+    height: 45px; /* Define height to match the example */
+    text-align: center; /* Center the icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; /* Adjust border-radius for the square corners */
+}
+
+.toggle-btn:hover {
+    background: green; /* Hover color */
+}
+
+.sidebar {
+    background-color: white; /* Changed to white */
+    color: black;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    display: none; /* Hidden by default */
+}
+
+.sidebar.open {
+    width: 200px; /* Expand to full width when open */
+    display: block; /* Display when open */
+}
+
+.sidebar .close-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 160px;
+}
+
+.sidebar .close-btn:hover {
+    color: green; /* Hover color for close button */
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.sidebar .sidebar-content ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar .sidebar-content ul li {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sidebar .sidebar-content ul li a {
+    color: black; /* Sidebar link text color */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px 0; /* Increase height of links */
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.sidebar .sidebar-content ul li a:hover {
+    background-color: green; /* Hover color for links */
+    padding: 20px 0; /* Increase padding on hover to make the links taller */
+}
+
+/* Main Content Styles */
+main {
+    margin-left: 50px; /* Adjusted margin to match reduced sidebar width */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin-left 0.3s;
+    text-align: center; /* Center content */
+}
+
+main .main-content {
+    background: rgba(255, 255, 255, 0.8); /* Increased transparency */
+    padding: 10px; /* Reduced padding for better fit */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center; /* Align items in the center */
+    justify-content: space-between; /* Space between text and image */
+    border-radius: 8px;
+    border: 2px solid black;
+    max-width: 900px; /* Reduced max-width */
+    width: 85%; /* Adjusted width for better fit */
+}
+
+main .text-content {
+    flex: 1;
+    text-align: left; /* Left align text */
+    padding-right: 10px; /* Reduced padding */
+}
+
+main .profile-pic {
+    max-width: 300px; /* Reduced image size */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+.thin-footer {
+    width: 20%; /* Ensure footer spans a good portion of the screen */
+    background-color: white;
+    color: black;
+    padding: 5px; /* Reduced padding */
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; /* Reduced margin */
+    border-radius: 8px; /* Optional: add some rounding to the corners */
+    border: 1px solid black; /* Add border around the box */
+    height: 50px; /* Adjusted height */
+}
+
+.thin-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; /* Ensure content spans the full height */
+}
+
+.thin-footer .footer-content img.monero-logo {
+    max-height: 20px; /* Adjusted size for better fit */
+    margin-right: 5px; /* Space between logo and text */
+}
+
+.thin-footer .footer-content .wallet-box {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    word-break: break-word; /* Ensure the text wraps within the box */
+    text-align: center;
+    display: flex;
+    align-items: center; /* Align items horizontally */
+    justify-content: center; /* Center content */
+}
+
+.thin-footer .footer-content .wallet-label {
+    font-size: 1em; /* Larger font size for label */
+    margin-bottom: 5px; /* Add some space between label and address */
+    text-align: center; /* Center the label */
+}
+
+.thin-footer .footer-content .monero-text {
+    font-size: 0.5em; /* Smaller font size for address */
+    word-wrap: break-word; /* Ensure the address text wraps */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .sidebar.open {
+        width: 200px;
+    }
+
+    .sidebar .toggle-btn {
+        position: fixed;
+        left: 10px;
+        top: 10px;
+    }
+
+    .sidebar.open .toggle-btn {
+        left: 210px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    main .main-content {
+        flex-direction: column; /* Stack content vertically on mobile */
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    main .text-content {
+        padding-right: 0; /* Remove padding on mobile */
+    }
+
+    main .profile-pic {
+        max-width: 100%; /* Adjust image size for mobile */
+        margin-top: 10px; /* Add margin to top of image */
+    }
+
+    .thin-footer {
+        width: 80%; /* Ensure footer spans a good portion of the screen */
+    }
+}
+

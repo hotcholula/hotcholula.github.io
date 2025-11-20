@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../duacairo.jpg'); /* Replace with your background image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* Tags Styles */
+.tags {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.tags ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.tags ul li {
+    margin: 5px 15px; /* Adjust margins for better spacing */
+}
+
+.tags ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.tags ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Basmala Styles */
+.fixed-basmala {
+    position: fixed;
+    top: 60px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 998;
+    pointer-events: none; /* Ensure it doesn't interfere with other elements */
+}
+
+.basmala {
+    max-height: 80px;
+    width: auto;
+}
+
+/* Navigation Styles */
+.toggle-btn {
+    background: white;
+    border: 2px solid black;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: fixed;
+    top: 5px; /* Adjust the top position */
+    left: 10px;
+    z-index: 1001;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.toggle-btn:hover {
+    background: green;
+}
+
+.sidebar {
+    background-color: white;
+    color: black;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    z-index: 1000;
+    display: none;
+    border-right: 2px solid black; /* Added to match the header */
+}
+
+.sidebar.open {
+    width: 200px;
+    display: block;
+}
+
+.sidebar .close-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 160px;
+}
+
+.sidebar .close-btn:hover {
+    color: green;
+}
+
+.sidebar .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.sidebar .sidebar-content ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar .sidebar-content ul li {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sidebar .sidebar-content ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.sidebar .sidebar-content ul li a:hover {
+    background-color: green;
+    padding: 20px 0;
+}
+
+/* Main Content Styles */
+main {
+    margin-top: 160px; /* Adjust for fixed tags and Basmala height */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #4CAF50;
+    text-align: left;
+    width: 70%;
+    max-width: 1000px;
+}
+
+.content-box h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.content-box article {
+    margin-bottom: 20px;
+}
+
+.content-box article h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.content-box article p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer Styles */
+.thin-footer {
+    width: 20%;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.thin-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.thin-footer .footer-content img.monero-logo {
+    max-height: 20px;
+    margin-right: 5px;
+}
+
+.thin-footer .footer-content .wallet-box {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    word-break: break-word;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thin-footer .footer-content .wallet-label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.thin-footer .footer-content .monero-text {
+    font-size: 0.5em;
+    word-wrap: break-word;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .tags {
+        padding: 10px 0; /* Adjust padding for mobile */
+    }
+    
+    .tags ul li {
+        margin: 5px 10px; /* Adjust margin for better spacing */
+    }
+
+    .toggle-btn {
+        width: 30px; /* Reduce size for mobile */
+        height: 30px;
+        top: 10px; /* Adjust position */
+        left: 10px;
+        font-size: 1em;
+    }
+
+    .sidebar {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .sidebar.open {
+        width: 200px;
+    }
+
+    .sidebar .close-btn {
+        left: 130px; /* Adjust position for mobile */
+    }
+
+    main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    main .content-box {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .thin-footer {
+        width: 80%;
+    }
+}
+

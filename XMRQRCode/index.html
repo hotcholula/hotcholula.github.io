@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate via QR Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleNav()">☰</button>
+    <nav class="sidebar">
+        <button class="close-btn" onclick="toggleNav()">✖</button>
+        <div class="sidebar-content">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact">Contact</a></li>
+                <li><a href="../articles">Articles</a></li>
+                <li><a href="../books">Books</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <img src="donation1.png" alt="Monero Donation QR Code" class="qr-image">
+        <p class="thank-you">Thank you for donating!</p>
+    </div>
+    <script>
+        function toggleNav() {
+            document.querySelector('.sidebar').classList.toggle('open');
+        }
+
+        document.addEventListener('click', function(event) {
+            const sidebar = document.querySelector('.sidebar');
+            const toggleBtn = document.querySelector('.toggle-btn');
+            if (!sidebar.contains(event.target) && !toggleBtn.contains(event.target) && sidebar.classList.contains('open')) {
+                sidebar.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>
+

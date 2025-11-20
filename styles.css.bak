@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #e6f7e6;
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styles */
+header {
+    background-image: url('spaceheader.jpg'); /* Replace with your long picture URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+/* Navigation Styles */
+aside {
+    background-color: #3cb371;
+    padding: 10px;
+    background: rgba(60, 179, 113, 0.8);
+    width: 25%;
+    box-sizing: border-box;
+}
+
+aside h2 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    width: 75%;
+    box-sizing: border-box;
+}
+
+main section {
+    margin: 20px 0;
+    text-align: center; /* Center the headings and content */
+}
+
+main h2 {
+    font-size: 2em;
+    color: #2e8b57;
+}
+
+main p {
+    font-size: 1.2em;
+    color: #2f4f4f;
+}
+
+main img {
+    max-width: 50%; /* Resize the image */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2e8b57;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(46, 139, 87, 0.8);
+}
+
+footer p {
+    margin: 0;
+}
+
