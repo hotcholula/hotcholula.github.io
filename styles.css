@@ -307,6 +307,16 @@ main {
     letter-spacing: -0.01em;
 }
 
+.project-item h3 a {
+    color: #0f172a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-item h3 a:hover {
+    color: #6366f1;
+}
+
 .project-description {
     font-size: 0.9375em;
     color: #475569;
