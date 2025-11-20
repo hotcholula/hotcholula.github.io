@@ -257,6 +257,136 @@ main {
     letter-spacing: -0.01em;
 }
 
+/* Projects & Work Section */
+.projects-work-section {
+    padding: 100px 20px;
+    background-color: #fafbfc;
+}
+
+.projects-work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subsection-title {
+    font-size: 2em;
+    margin: 0 0 40px 0;
+    color: #0f172a;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+/* Projects Section */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px;
+    transition: all 0.25s ease;
+}
+
+.project-item:hover {
+    border-color: #c7d2fe;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.08);
+}
+
+.project-item h3 {
+    font-size: 1.25em;
+    margin: 0 0 12px 0;
+    color: #0f172a;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.project-description {
+    font-size: 0.9375em;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-tag {
+    background-color: #f1f5f9;
+    color: #475569;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8125em;
+    font-weight: 500;
+}
+
+/* Work Section */
+.work-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.work-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 28px;
+    transition: all 0.25s ease;
+}
+
+.work-item:hover {
+    border-color: #c7d2fe;
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.08);
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    gap: 16px;
+}
+
+.work-item h3 {
+    font-size: 1.25em;
+    margin: 0;
+    color: #0f172a;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    flex: 1;
+}
+
+.work-date {
+    font-size: 0.875em;
+    color: #94a3b8;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.work-company {
+    font-size: 0.9375em;
+    color: #6366f1;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.work-description {
+    font-size: 0.9375em;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* Footer Styles */
 .thin-footer {
     width: 100%;
@@ -343,8 +473,9 @@ main {
     }
 
     .recent-articles,
-    .about-section {
-        padding: 50px 20px;
+    .about-section,
+    .projects-work-section {
+        padding: 60px 20px;
     }
 
     .section-title {
@@ -353,6 +484,15 @@ main {
 
     .articles-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-work-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .subsection-title {
+        font-size: 1.75em;
     }
 
     .thin-footer {
