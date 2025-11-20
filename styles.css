@@ -14,22 +14,6 @@ body {
     background-position: center; /* Center the background image */
 }
 
-/* Header Styles */
-header {
-    text-align: center;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
-
-header .basmala {
-    max-height: 80px;
-    width: auto;
-}
-
 /* Navigation Styles */
 .top-nav {
     background-color: rgba(255, 255, 255, 0.95);
