@@ -113,6 +113,46 @@
             border-bottom-width: 2px;
         }
 
+        .article-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 30px 0;
+            border: 3px double #8b7355;
+            box-shadow: 4px 4px 0 rgba(139, 115, 85, 0.2);
+            background: #f5f1e8;
+            padding: 8px;
+            display: block;
+        }
+
+        .article-image svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #6d4c41;
+            margin-top: 10px;
+            font-size: 0.95em;
+            font-family: 'Courier Prime', monospace;
+        }
+
+        .images-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        @media (min-width: 768px) {
+            .images-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
             .article-container {
                 padding: 25px 20px;
@@ -150,6 +190,9 @@
             Each thread you see represents one of over 8,000 intertextual cross-references within the Quran. These cross-references, or links, connect verses that are related in content,
             helping to explain and expand upon the meanings of other verses. The colors of the threads vary depending on the length of the connections.
         </p>
+        
+        <img src="ColoredVerseToVerse.svg" alt="Colored Verse to Verse Cross-References Visualization" class="article-image">
+        <p class="image-caption">Visual representation of cross-references between verses in the Quran</p>
         <p>
             For instance, one thread might represent a verse that refers to or clarifies another. This method of explaining the Quran through the Quran itself is known as 
             <strong>Tafsir al Quran bil Quran</strong> (TQBQ), which translates to "Exegesis of the Quran by the Quran." In this approach, one verse helps to explain another, 
@@ -172,11 +215,23 @@
             For example, certain chapters are referenced more frequently than others. This is useful for anyone interested in Quranic studies, as it gives a clearer picture of how the text explains itself.
         </p>
         <p>
-            To provide an easier view, I’ve created several graphs. The first shows the number of references each chapter makes to other chapters. You might notice certain patterns and begin asking questions, 
-            like: “Why does chapter 2 have so many references?” or “Is there a correlation between the length of a chapter and how often it’s referenced?”
+            To provide an easier view, I've created several graphs. The first shows the number of references each chapter makes to other chapters. You might notice certain patterns and begin asking questions, 
+            like: "Why does chapter 2 have so many references?" or "Is there a correlation between the length of a chapter and how often it's referenced?"
         </p>
+        
+        <div class="images-grid">
+            <div>
+                <img src="NumberofReferences.png" alt="Number of References by Chapter" class="article-image">
+                <p class="image-caption">Number of references each chapter makes to other chapters</p>
+            </div>
+            <div>
+                <img src="NumberofReferrals.png" alt="Number of Referrals by Chapter" class="article-image">
+                <p class="image-caption">Number of times each chapter is referred to by other chapters</p>
+            </div>
+        </div>
+        
         <p>
-            Another graph shows how many times each chapter is referred to by other chapters. Additionally, we can observe the length of each surah, with longer chapters appearing at the beginning of the Quran 
+            Additionally, we can observe the length of each surah, with longer chapters appearing at the beginning of the Quran 
             and shorter ones toward the end.
         </p>
 
