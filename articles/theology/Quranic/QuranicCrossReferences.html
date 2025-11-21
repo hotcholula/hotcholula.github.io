@@ -1,64 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploring the Intertextual Cross-References in the Quran</title>
+    <link rel="stylesheet" href="../../../styles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+        
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            font-family: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+            background-color: #f5f1e8;
+            background-image: 
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px),
+                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px);
+            color: #3d2817;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.8;
+            position: relative;
         }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(139, 115, 85, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 115, 85, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        body > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #ede8dd;
+            border: 3px double #8b7355;
+            box-shadow: 4px 4px 0 rgba(139, 115, 85, 0.2);
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+
         h1 {
-            color: #4a90e2;
+            color: #3d2817;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            font-family: 'Courier Prime', monospace;
+            font-size: 2.5em;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-bottom: 3px double #8b7355;
+            padding-bottom: 20px;
         }
+
         h2 {
-            color: #333;
-            border-bottom: 2px solid #4a90e2;
+            color: #3d2817;
+            border-bottom: 2px solid #8b7355;
             padding-bottom: 10px;
             margin-top: 40px;
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.8em;
+            font-weight: 600;
+            letter-spacing: 0.02em;
         }
+
         p {
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.9;
+            margin-bottom: 24px;
+            color: #5d4037;
+            font-size: 1.15em;
         }
+
         ul {
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #f5f1e8;
+            padding: 25px;
+            border: 2px solid #8b7355;
+            box-shadow: 3px 3px 0 rgba(139, 115, 85, 0.2);
+            margin: 30px 0;
         }
+
         ul li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #5d4037;
+            line-height: 1.8;
         }
+
         strong {
-            color: #4a90e2;
+            color: #3d2817;
+            font-weight: 600;
         }
+
         a {
-            color: #4a90e2;
+            color: #6d4c41;
             text-decoration: none;
+            border-bottom: 1px solid #8b7355;
+            transition: all 0.2s ease;
         }
+
         a:hover {
-            text-decoration: underline;
+            color: #3d2817;
+            border-bottom-width: 2px;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 25px 20px;
+                margin-top: 60px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1.05em;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <nav class="top-nav">
+        <ul>
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../../contact">Contact</a></li>
+            <li><a href="../../../articles">Articles</a></li>
+            <li><a href="../../../books">Books</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="article-container">
         <h1>Exploring the Intertextual Cross-References in the Quran</h1>
         <p>
             What you are looking at is a visual representation of the Quran, the holy text revealed to the Prophet Muhammad [Peace be Upon Him] over a period of twenty-three years.
@@ -126,6 +211,15 @@
             <li><strong>Cross-Reference</strong>: Any time a verse clearly refers to another verse or explains its meaning.</li>
             <li><strong>Tafsir al Quran bil Quran (TQBQ)</strong>: A method of interpreting a Quranic verse using other Quranic verses.</li>
         </ul>
+        </div>
+    </main>
+    <div class="thin-footer">
+        <div class="footer-content">
+            <div class="wallet-box">
+                <img src="../../../monero_logo.png" alt="Monero Logo" class="monero-logo">
+                <p>Donate <a href="../../../XMRQRCode" target="_blank">[QR]</a> <span class="monero-text">8BKtZWtaKRSjAm8P9CxtEHYsHNPQi64bvbgYCu8TixsqHR6vXA1T1vCNVfaBnaFZXRS9zu2BMPndU9KFWekQ8bgFEZ72LLE</span></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
