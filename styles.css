@@ -122,17 +122,6 @@ main {
     position: relative;
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 2px;
-    background: #8b7355;
-}
-
 .hero-content {
     max-width: 900px;
     margin: 0 auto;
