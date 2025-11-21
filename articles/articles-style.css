@@ -264,7 +264,12 @@ main {
     color: #5d4037;
 }
 
-.post-category.politics {
+.post-category.robotics {
+    background-color: #d7ccc8;
+    color: #5d4037;
+}
+
+.post-category.literature {
     background-color: #d7ccc8;
     color: #5d4037;
 }
