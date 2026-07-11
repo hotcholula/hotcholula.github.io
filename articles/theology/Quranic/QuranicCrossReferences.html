@@ -5,279 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploring the Intertextual Cross-References in the Quran</title>
     <link rel="stylesheet" href="../../../styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
-        
-        body {
-            font-family: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
-            background-color: #f5f1e8;
-            background-image: 
-                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px),
-                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,.03) 2px, rgba(0,0,0,.03) 4px);
-            color: #3d2817;
-            margin: 0;
-            padding: 0;
-            line-height: 1.8;
-            position: relative;
-        }
-
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(139, 115, 85, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(139, 115, 85, 0.1) 0%, transparent 50%);
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        body > * {
-            position: relative;
-            z-index: 1;
-        }
-
-        .article-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px;
-            background: #ede8dd;
-            border: 3px double #8b7355;
-            box-shadow: 4px 4px 0 rgba(139, 115, 85, 0.2);
-            margin-top: 80px;
-            margin-bottom: 60px;
-        }
-
-        h1 {
-            color: #3d2817;
-            text-align: center;
-            margin-bottom: 30px;
-            font-family: 'Courier Prime', monospace;
-            font-size: 2.5em;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            border-bottom: 3px double #8b7355;
-            padding-bottom: 20px;
-        }
-
-        h2 {
-            color: #3d2817;
-            border-bottom: 2px solid #8b7355;
-            padding-bottom: 10px;
-            margin-top: 40px;
-            font-family: 'Courier Prime', monospace;
-            font-size: 1.8em;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-        }
-
-        p {
-            line-height: 1.9;
-            margin-bottom: 24px;
-            color: #5d4037;
-            font-size: 1.15em;
-        }
-
-        ul {
-            background-color: #f5f1e8;
-            padding: 25px;
-            border: 2px solid #8b7355;
-            box-shadow: 3px 3px 0 rgba(139, 115, 85, 0.2);
-            margin: 30px 0;
-        }
-
-        ul li {
-            margin-bottom: 12px;
-            color: #5d4037;
-            line-height: 1.8;
-        }
-
-        strong {
-            color: #3d2817;
-            font-weight: 600;
-        }
-
-        a {
-            color: #6d4c41;
-            text-decoration: none;
-            border-bottom: 1px solid #8b7355;
-            transition: all 0.2s ease;
-        }
-
-        a:hover {
-            color: #3d2817;
-            border-bottom-width: 2px;
-        }
-
-        .article-image {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            margin: 30px 0;
-            border: 3px double #8b7355;
-            box-shadow: 4px 4px 0 rgba(139, 115, 85, 0.2);
-            background: #f5f1e8;
-            padding: 8px;
-            display: block;
-        }
-
-        .article-image.svg-image {
-            max-width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .article-image svg {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .image-caption {
-            text-align: center;
-            font-style: italic;
-            color: #6d4c41;
-            margin-top: 10px;
-            font-size: 0.95em;
-            font-family: 'Courier Prime', monospace;
-        }
-
-        .images-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            margin: 40px 0;
-        }
-
-        @media (min-width: 768px) {
-            .images-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .article-container {
-                padding: 25px 20px;
-                margin-top: 60px;
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            p {
-                font-size: 1.05em;
-            }
-        }
-    </style>
 </head>
 <body>
     <nav class="top-nav">
         <ul>
-            <li><a href="../../../index.html">Home</a></li>
-            <li><a href="../../../contact">Contact</a></li>
+            <li><a href="../../../index.html">aryan.c</a></li>
             <li><a href="../../../articles">Articles</a></li>
             <li><a href="../../../books">Books</a></li>
+            <li><a href="../../../contact">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <div class="article-container">
-        <h1>Exploring the Intertextual Cross-References in the Quran</h1>
-        <p>
-            What you are looking at is a visual representation of the Quran. Each thread you see represents one of over 8,000 intertextual cross-references within the Quran. These cross-references, or links, connect verses which reference, explain, quote, or elaborate on another. The colors of the threads are determined by the distance between chapters, and thus, length of the thread.
-        </p>
-        
-        <img src="ColoredVerseToVerse.svg" alt="Colored Verse to Verse Cross-References Visualization" class="article-image svg-image">
-        <p class="image-caption">Visual representation of cross-references between verses in the Quran</p>
-        <p>
-            The graph I have put together demonstrates the hypertextuality of the Qur’an. Analyzing Qur’anic intertextual references is useful for
-            <strong>Tafsir al Quran bil Quran</strong> (TQBQ), which translates to "Exegesis of the Quran by the Quran." In this approach, one verse helps to explain another, doing two primary things: providing exegesis from the most authoritative source on the Qur’an (itself), and expressing literary excellence. 
-     
-        </p>
-
-        <h2>The Challenges of Systemizing TQBQ</h2>
-        <p>
-            TQBQ is not a modern concept—it has been used by classical scholars for centuries. However, it is challenging to systematize this form of exegesis due to the subjective 
-            interpretations scholars may apply to different verses. One exegete might identify a parallel between two verses that another exegete does not see. I wanted to create a visual representation of TQBQ. 
-        </p>
-        <p>
-
-            To generate the graph, I used data from Professor Mun’im Sirry. His methodology on considering cross-references was rigourous and straightforward. It should be noted that these cross-references are not extremely esoteric; it is quite easy to see how each verse references one another, thus the representation above is a very conservative one. Despite not being exhaustive, the vast number of intertextual references, I included is remarkable (especially considering that the Qur’an only contains 600 pages). 
-            
-
-        <h2>A Tool for Insight</h2>
-        <p>
-            Beyond aesthetic appeal, collecting data this way offers valuable insights. It allows us to explore how often chapters refer to one another, revealing patterns of connection throughout the Quran; it also gives us the opportunity to analyze different scholars’ collections of TQBQ and see potential for biases. 
-            For example, certain chapters are referenced more frequently than others. This is useful for anyone interested in Quranic studies, as it gives a clearer picture of how the text explains itself.
-        </p>
-        <p>
-            To provide an easier view, I've created several graphs. The first shows the number of references each chapter makes to other chapters. You might notice certain patterns and begin asking questions, 
-            like: "Why does chapter 2 have so many references?" or "Is there a correlation between the length of a chapter and how often it's referenced?"
-        </p>
-        
-        <div class="images-grid">
-            <div>
-                <img src="NumberofReferences.png" alt="Number of References by Chapter" class="article-image">
-                <p class="image-caption">Number of references each chapter makes to other chapters</p>
+        <article class="article-page">
+            <div class="article-meta-top">
+                <span>September 8, 2024</span>
+                <span>·</span>
+                <span>Theology</span>
+                <span>·</span>
+                <a href="../../index.html" class="back-link">← Articles</a>
             </div>
-            <div>
-                <img src="NumberofReferrals.png" alt="Number of Referrals by Chapter" class="article-image">
-                <p class="image-caption">Number of times each chapter is referred to by other chapters</p>
+
+            <h1>Exploring the Intertextual Cross-References in the Quran</h1>
+
+            <p>
+                What you are looking at is a visual representation of the Quran. Each thread you see represents one of over 8,000 intertextual cross-references within the Quran. These cross-references, or links, connect verses which reference, explain, quote, or elaborate on another. The colors of the threads are determined by the distance between chapters, and thus, length of the thread.
+            </p>
+
+            <img src="ColoredVerseToVerse.svg" alt="Colored Verse to Verse Cross-References Visualization" class="article-image">
+            <p class="image-caption">Visual representation of cross-references between verses in the Quran</p>
+
+            <p>
+                The graph I have put together demonstrates the hypertextuality of the Qur'an. Analyzing Qur'anic intertextual references is useful for
+                <strong>Tafsir al Quran bil Quran</strong> (TQBQ), which translates to "Exegesis of the Quran by the Quran." In this approach, one verse helps to explain another, doing two primary things: providing exegesis from the most authoritative source on the Qur'an (itself), and expressing literary excellence.
+            </p>
+
+            <h2>The Challenges of Systemizing TQBQ</h2>
+            <p>
+                TQBQ is not a modern concept—it has been used by classical scholars for centuries. However, it is challenging to systematize this form of exegesis due to the subjective interpretations scholars may apply to different verses. One exegete might identify a parallel between two verses that another exegete does not see. I wanted to create a visual representation of TQBQ.
+            </p>
+            <p>
+                To generate the graph, I used data from Professor Mun'im Sirry. His methodology on considering cross-references was rigourous and straightforward. It should be noted that these cross-references are not extremely esoteric; it is quite easy to see how each verse references one another, thus the representation above is a very conservative one. Despite not being exhaustive, the vast number of intertextual references I included is remarkable (especially considering that the Qur'an only contains 600 pages).
+            </p>
+
+            <h2>A Tool for Insight</h2>
+            <p>
+                Beyond aesthetic appeal, collecting data this way offers valuable insights. It allows us to explore how often chapters refer to one another, revealing patterns of connection throughout the Quran; it also gives us the opportunity to analyze different scholars' collections of TQBQ and see potential for biases. For example, certain chapters are referenced more frequently than others. This is useful for anyone interested in Quranic studies, as it gives a clearer picture of how the text explains itself.
+            </p>
+            <p>
+                To provide an easier view, I've created several graphs. The first shows the number of references each chapter makes to other chapters. You might notice certain patterns and begin asking questions, like: "Why does chapter 2 have so many references?" or "Is there a correlation between the length of a chapter and how often it's referenced?"
+            </p>
+
+            <div class="images-grid">
+                <div>
+                    <img src="NumberofReferences.png" alt="Number of References by Chapter" class="article-image">
+                    <p class="image-caption">Number of references each chapter makes to other chapters</p>
+                </div>
+                <div>
+                    <img src="NumberofReferrals.png" alt="Number of Referrals by Chapter" class="article-image">
+                    <p class="image-caption">Number of times each chapter is referred to by other chapters</p>
+                </div>
             </div>
-        </div>
-        
-        <p>
-            Additionally, we can observe the length of each surah, with longer chapters appearing at the beginning of the Quran 
-            and shorter ones toward the end.
-        </p>
 
-        <h2>Observations and Future Work</h2>
-        <p>
-            A clear observation is the correlation between the number of references and the length of a chapter. It’s possible that more words naturally provide more opportunities for cross-reference.
-            Another possibility is that Dr. Sirry might have started his analysis with the longer chapters and thus paid more attention to them. It’s likely a combination of both factors. 
-        </p>
-        <p>
-            While the data I used focuses on clear, exoteric references, there’s still much work to be done, especially in mapping more esoteric references that are not immediately obvious. However, this is a task 
-            that I am not qualified for, as I am a college student with a passion for engineering and theology, rather than an expert in Quranic exegesis.
+            <p>
+                Additionally, we can observe the length of each surah, with longer chapters appearing at the beginning of the Quran and shorter ones toward the end.
+            </p>
 
-Other work woud be to collect various scholars’ TQBQ, visualize them, and note the overlaps. Seeing the overlaps provides a stronger case for “objective” cross-references. Seeing outliers can provide insight into the scholar’s thoughts and methodology when doing exegesis. 
-        </p>
+            <h2>Observations and Future Work</h2>
+            <p>
+                A clear observation is the correlation between the number of references and the length of a chapter. It's possible that more words naturally provide more opportunities for cross-reference. Another possibility is that Dr. Sirry might have started his analysis with the longer chapters and thus paid more attention to them. It's likely a combination of both factors.
+            </p>
+            <p>
+                While the data I used focuses on clear, exoteric references, there's still much work to be done, especially in mapping more esoteric references that are not immediately obvious. However, this is a task that I am not qualified for, as I am a college student with a passion for engineering and theology, rather than an expert in Quranic exegesis.
+            </p>
+            <p>
+                Other work would be to collect various scholars' TQBQ, visualize them, and note the overlaps. Seeing the overlaps provides a stronger case for "objective" cross-references. Seeing outliers can provide insight into the scholar's thoughts and methodology when doing exegesis.
+            </p>
+            <p>
+                Feel free to share your thoughts or suggestions for further improvements to this project.
+            </p>
+            <p>
+                Lastly, I want to clarify that the views expressed here are my own, and this work is intended to fulfill a need I saw, not to endorse any specific group or ideology.
+            </p>
 
-       
-        <p>
-            Feel free to share your thoughts or suggestions for further improvements to this project.
-        </p>
-        <p>
-            Lastly, I want to clarify that the views expressed here are my own, and this work is intended to fulfill a need I saw, not to endorse any specific group or ideology.
-        </p>
-
-        <h2>Definitions</h2>
-        <ul>
-            <li><strong>Exegesis (Tafsir)</strong>: An explanation or elucidation of the meanings of a work.</li>
-            <li><strong>Exegete (Mufassir)</strong>: Someone who writes an exegesis.</li>
-            <li><strong>Esoteric (Baatin)</strong>: Inward meaning that is not immediately obvious.</li>
-            <li><strong>Exoteric (Zahir)</strong>: Outward meaning that is immediately obvious.</li>
-            <li><strong>Cross-Reference</strong>: Any time a verse clearly refers to another verse or explains its meaning.</li>
-            <li><strong>Tafsir al Quran bil Quran (TQBQ)</strong>: A method of interpreting a Quranic verse using other Quranic verses.</li>
-        </ul>
-        </div>
+            <h2>Definitions</h2>
+            <ul>
+                <li><strong>Exegesis (Tafsir)</strong>: An explanation or elucidation of the meanings of a work.</li>
+                <li><strong>Exegete (Mufassir)</strong>: Someone who writes an exegesis.</li>
+                <li><strong>Esoteric (Baatin)</strong>: Inward meaning that is not immediately obvious.</li>
+                <li><strong>Exoteric (Zahir)</strong>: Outward meaning that is immediately obvious.</li>
+                <li><strong>Cross-Reference</strong>: Any time a verse clearly refers to another verse or explains its meaning.</li>
+                <li><strong>Tafsir al Quran bil Quran (TQBQ)</strong>: A method of interpreting a Quranic verse using other Quranic verses.</li>
+            </ul>
+        </article>
     </main>
-    <div class="thin-footer">
+
+    <footer class="thin-footer">
         <div class="footer-content">
             <div class="wallet-box">
-                <img src="../../../monero_logo.png" alt="Monero Logo" class="monero-logo">
-                <p>Donate <a href="../../../XMRQRCode" target="_blank">[QR]</a> <span class="monero-text">8BKtZWtaKRSjAm8P9CxtEHYsHNPQi64bvbgYCu8TixsqHR6vXA1T1vCNVfaBnaFZXRS9zu2BMPndU9KFWekQ8bgFEZ72LLE</span></p>
+                <img src="../../../monero_logo.png" alt="XMR" class="monero-logo">
+                <span>Donate <a href="../../../XMRQRCode">[QR]</a></span>
+                <span class="monero-text">8BKtZWtaKRSjAm8P9CxtEHYsHNPQi64bvbgYCu8TixsqHR6vXA1T1vCNVfaBnaFZXRS9zu2BMPndU9KFWekQ8bgFEZ72LLE</span>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
-

@@ -3,70 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles</title>
-    <link rel="stylesheet" href="articles-style.css">
+    <title>Articles — Aryan Chandavarkar</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <nav class="tags">
-        <ul>
-            <li><a href="#theology">Theology</a></li>
-            <li><a href="#philosophy">Philosophy</a></li>
-            <li><a href="#robotics">Robotics</a></li>
-            <li><a href="#literature">Literature</a></li>
-        </ul>
-    </nav>
     <nav class="top-nav">
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../contact">Contact</a></li>
+            <li><a href="../index.html">aryan.c</a></li>
             <li><a href="../articles">Articles</a></li>
             <li><a href="../books">Books</a></li>
+            <li><a href="../contact">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <div class="blog-container">
-            <header class="blog-header">
-                <h1>Articles & Blog</h1>
-                <p class="blog-subtitle">Thoughts on theology, philosophy, robotics, and literature</p>
-            </header>
-            
-            <div class="articles-list">
-                <article class="blog-post">
-                    <div class="post-meta">
-                        <span class="post-date">September 8, 2024</span>
-                        <span class="post-category theology">Theology</span>
+        <section class="page-hero">
+            <h1>Articles</h1>
+            <p class="page-subtitle">Thoughts on theology, philosophy, robotics, and literature.</p>
+            <nav class="tag-filter">
+                <a href="#theology">Theology</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#robotics">Robotics</a>
+                <a href="#literature">Literature</a>
+            </nav>
+        </section>
+
+        <section class="recent-articles">
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-meta">
+                        <span class="article-date">Sep 8, 2024</span>
+                        <span class="article-category">Theology</span>
                     </div>
-                    <h2><a href="theology/Quranic/QuranicCrossReferences.html">Qur'anic Cross-References</a></h2>
-                    <p class="post-excerpt">Analyzing the Cross-References of the Qur'an</p>
-                    <div class="article-links">
-                        <a href="theology/Quranic/QuranicCrossReferences.html" class="read-more-link">Read Article →</a>
-                        <a href="theology/Quranic/QuranicCrossReferences.pdf" class="pdf-download" download>📄 Download PDF</a>
-                    </div>
-                </article>
-                
-                <article class="blog-post">
-                    <div class="post-meta">
-                        <span class="post-date">March 1, 2024</span>
-                        <span class="post-category general">General</span>
-                    </div>
-                    <h2><a href="#article3">Article 3</a></h2>
-                    <p class="post-excerpt">A brief summary of the third article...</p>
-                    <div class="article-links">
-                        <a href="#article3" class="read-more-link">Read Article →</a>
-                        <a href="#article3.pdf" class="pdf-download" download>📄 Download PDF</a>
-                    </div>
+                    <h3><a href="theology/Quranic/QuranicCrossReferences.html">Qur'anic Cross-References</a></h3>
+                    <p>Analyzing the cross-references of the Qur'an.</p>
+                    <a href="theology/Quranic/QuranicCrossReferences.html" class="read-more">Read →</a>
                 </article>
             </div>
-        </div>
+        </section>
     </main>
-    <div class="thin-footer">
+
+    <footer class="thin-footer">
         <div class="footer-content">
             <div class="wallet-box">
-                <img src="../monero_logo.png" alt="Monero Logo" class="monero-logo"> <!-- Replace with your Monero logo URL -->
-                <p>Donate <a href="../XMRQRCode" target="_blank">[QR]</a> <span class="monero-text">8BKtZWtaKRSjAm8P9CxtEHYsHNPQi64bvbgYCu8TixsqHR6vXA1T1vCNVfaBnaFZXRS9zu2BMPndU9KFWekQ8bgFEZ72LLE</span></p> <!-- Replace with your Monero wallet address and QR code URL -->
+                <img src="../monero_logo.png" alt="XMR" class="monero-logo">
+                <span>Donate <a href="../XMRQRCode">[QR]</a></span>
+                <span class="monero-text">8BKtZWtaKRSjAm8P9CxtEHYsHNPQi64bvbgYCu8TixsqHR6vXA1T1vCNVfaBnaFZXRS9zu2BMPndU9KFWekQ8bgFEZ72LLE</span>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
-
