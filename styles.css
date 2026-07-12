@@ -151,11 +151,17 @@ main {
 
 /* Sections */
 .projects-work-section,
+.education-section,
+.contact-section,
 .recent-articles {
     padding: 64px 32px;
     border-bottom: 1px solid var(--border);
     max-width: 860px;
     margin: 0 auto;
+}
+
+.contact-section .contact-list {
+    margin-top: 0;
 }
 
 .section-header {
@@ -462,30 +468,6 @@ main {
     max-width: 520px;
 }
 
-/* Tag filter (Articles page) */
-.tag-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 28px;
-}
-
-.tag-filter a {
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    border: 1px solid var(--border);
-    padding: 7px 14px;
-    text-decoration: none;
-    transition: all 0.15s ease;
-}
-
-.tag-filter a:hover {
-    color: var(--accent);
-    border-color: var(--accent);
-}
-
 /* Generic prose page (Books / Contact) */
 .prose-page {
     max-width: 860px;
@@ -716,6 +698,8 @@ main {
     .container,
     .hero,
     .projects-work-section,
+    .education-section,
+    .contact-section,
     .recent-articles,
     .page-hero,
     .prose-page,
