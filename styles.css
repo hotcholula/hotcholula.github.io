@@ -40,7 +40,6 @@ body {
 /* Nav */
 .top-nav {
     background-color: var(--bg);
-    border-bottom: 1px solid var(--border);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -84,7 +83,6 @@ main {
 /* Hero */
 .hero {
     padding: 80px 32px 64px;
-    border-bottom: 1px solid var(--border);
     max-width: 860px;
     margin: 0 auto;
 }
@@ -136,6 +134,16 @@ main {
     font-weight: 300;
 }
 
+.hero-description a {
+    color: var(--accent-dim);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.hero-description a:hover {
+    color: var(--accent);
+}
+
 .hero-image {
     flex-shrink: 0;
 }
@@ -155,7 +163,6 @@ main {
 .contact-section,
 .recent-articles {
     padding: 64px 32px;
-    border-bottom: 1px solid var(--border);
     max-width: 860px;
     margin: 0 auto;
 }
@@ -178,11 +185,10 @@ main {
     color: var(--accent);
 }
 
-.section-header::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
+.education-box {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    padding: 24px;
 }
 
 .projects-work-grid {
@@ -204,17 +210,11 @@ main {
 .project-list {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 28px;
 }
 
 .project-item {
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border);
     transition: all 0.15s ease;
-}
-
-.project-item:first-child {
-    border-top: 1px solid var(--border);
 }
 
 .project-item h3 {
@@ -254,24 +254,14 @@ main {
 .work-list {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 20px;
 }
 
 .work-item {
     display: flex;
     align-items: center;
     gap: 14px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border);
     transition: all 0.15s ease;
-}
-
-.work-item:first-child {
-    border-top: 1px solid var(--border);
-}
-
-.work-item:last-child {
-    border-bottom: 1px solid var(--border);
 }
 
 .work-logo {
@@ -326,19 +316,11 @@ main {
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1px;
-    background: var(--border);
-    border: 1px solid var(--border);
+    gap: 40px;
 }
 
 .article-card {
-    background: var(--bg);
-    padding: 28px;
-    transition: background 0.15s ease;
-}
-
-.article-card:hover {
-    background: var(--surface);
+    padding: 0;
 }
 
 .article-meta {
@@ -402,7 +384,6 @@ main {
 
 /* Footer */
 .thin-footer {
-    border-top: 1px solid var(--border);
     padding: 32px;
     max-width: 860px;
     margin: 0 auto;
@@ -444,10 +425,9 @@ main {
     font-weight: 300;
 }
 
-/* Page hero (Articles / Books / Contact headers) */
+/* Page hero (Articles / Contact headers) */
 .page-hero {
     padding: 64px 32px 48px;
-    border-bottom: 1px solid var(--border);
     max-width: 860px;
     margin: 0 auto;
 }
@@ -497,13 +477,13 @@ main {
     color: var(--text-muted);
     font-weight: 300;
     padding: 24px 0;
-    border-top: 1px solid var(--border);
     margin-top: 8px;
 }
 
 .contact-list {
     display: flex;
     flex-direction: column;
+    gap: 18px;
     margin-top: 8px;
 }
 
@@ -511,12 +491,6 @@ main {
     display: flex;
     align-items: baseline;
     gap: 20px;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.contact-item:first-child {
-    border-top: 1px solid var(--border);
 }
 
 .contact-label {
@@ -573,9 +547,7 @@ main {
     line-height: 1.35;
     letter-spacing: -0.01em;
     color: var(--text);
-    margin-bottom: 32px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
 }
 
 .article-page h2 {
