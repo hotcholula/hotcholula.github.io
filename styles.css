@@ -149,12 +149,23 @@ main {
 }
 
 .profile-pic {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border: 1px solid var(--border);
+    border-radius: 50%;
     display: block;
     filter: grayscale(30%);
+}
+
+.hero-image-caption {
+    margin-top: 12px;
+    max-width: 200px;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--text-dim);
+    text-align: center;
+    font-weight: 300;
 }
 
 /* Sections */
